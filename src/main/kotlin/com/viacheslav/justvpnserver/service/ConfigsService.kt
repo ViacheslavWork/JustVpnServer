@@ -24,12 +24,4 @@ class ConfigsService {
         }
         return result
     }
-    /*
-        fun getFileNames(): String {
-            val names = StringBuilder()
-            files.onEach {
-                if (it.isFile) names.append(it.name)
-            }
-            return names.toString()
-        }*/
 }
