@@ -6,14 +6,14 @@ import java.io.File
 @Service
 class ConfigsService {
 
+/*
     private val files =
         File("/Users/Viacheslav/test/").walk().toList().filter { it.isFile && it.name.endsWith(".conf") }
+*/
 
-/*
-    private val filesUbuntu =
+    private val files =
         File("/home/viacheslav/algo/configs/10.0.2.15/wireguard/").walk().toList()
             .filter { it.isFile && it.name.endsWith(".conf") }
-*/
 
     private var queueConfigsCounter = 0
 
