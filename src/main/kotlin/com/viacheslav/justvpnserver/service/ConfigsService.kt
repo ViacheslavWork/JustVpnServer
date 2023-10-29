@@ -11,8 +11,14 @@ class ConfigsService {
         File("/Users/Viacheslav/test/").walk().toList().filter { it.isFile && it.name.endsWith(".conf") }
 */
 
+/*
     private val files =
         File("/home/viacheslav/algo/configs/10.0.2.15/wireguard/").walk().toList()
+            .filter { it.isFile && it.name.endsWith(".conf") }
+*/
+
+    private val files =
+        File("/root/algo/configs/89.105.223.248/wireguard/").walk().toList()
             .filter { it.isFile && it.name.endsWith(".conf") }
 
     private var queueConfigsCounter = 0
