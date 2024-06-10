@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration monitorInterval="60">
+    <Properties>
+        <Property name="logFormat">
+            %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg %n
+        </Property>
+    </Properties>
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${logFormat}"/>
+        </Console>
+        <File name="LogFile" fileName="D:/app_just_vpn.log">
+            <PatternLayout pattern="${logFormat}"/>
+        </File>
+    </appenders>
+    <loggers>
+        <root level="INFO">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="LogFile"/>
+        </root>
+    </loggers>
+</configuration>
